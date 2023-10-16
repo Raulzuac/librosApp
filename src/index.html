@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="librosApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <title>App libros</title>
+</head>
+<style>
+    @font-face {
+        font-family: roboto;
+        src: url('../assets/Roboto-Regular.ttf');
+    }
+</style>
+
+<body ng-controller="librosController">
+    <div class="h-screen w-screen grid grid-cols-[2fr_5fr] font-[roboto]">
+        <aside class="flex justify-evenly items-center flex-col bg-[#d1d9db] ">
+            <img class="w-1/2" src="../assets/icon.jpg" alt="">
+            <div class="relative z-0 w-[75%] h-[2em]">
+                <input type="text" id="busqueda" ng-model="nombre"
+                    class="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-black appearance-none   dark:focus:border-[#b2524c] focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    placeholder=" " />
+                <label for="busqueda"
+                    class="absolute text-md text-black duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:dark:text-[#b2524c] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Busqueda
+                    de libro</label>
+            </div>
+            <div class="w-[80%]">
+                <h1 class="font-bold text-3xl">Libros disponibles</h1>
+                <ul class="appearance-none">
+                    <li ng-repeat="libro in libros | filter:nombre | orderBy:'titulo'"
+                        class="bg-[#b2524c] p-2 mt-2 font-semibold text-xl rounded-md hover:bg-[#c68f86] transition-colors">
+                    {{libro.titulo}}
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <main class="bg-[#b2524c] flex justify-center items-center">
+            <div
+                class="w-[80%] h-[80%] bg-[#d4dbdb] rounded-lg shadow-lg shadow-black grid grid-cols-[2fr_4fr] gap-4 p-2 ps-10">
+                <div class="flex items-center">
+                    <img class="rounded-md" src="{{libros[2].img}}" alt="">
+                </div>
+                <div class="m-10 flex flex-col justify-center space-y-8">
+                    <h1 class="text-4xl font-bold">{{libros[2].titulo}}</h1>
+                    <h5 class="text-2xl font-semibold ">{{libros[2].autor}}</h5>
+                    <p class="text-lg">{{libros[2].descripcion}}</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script src="main.js"></script>
+
+</html>
