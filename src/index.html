@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
     <title>App libros</title>
 </head>
 <style>
@@ -21,39 +22,52 @@
             <img class="w-1/2" src="../assets/icon.jpg" alt="">
             <div class="relative z-0 w-[75%] h-[2em]">
                 <input type="text" id="busqueda" ng-model="nombre"
-                    class="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-black appearance-none   dark:focus:border-[#b2524c] focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    class="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-black appearance-none   dark:focus:border-[#b2524c] checked:bg-[border-[#b2524c]] focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     placeholder=" " />
                 <label for="busqueda"
                     class="absolute text-md text-black duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:dark:text-[#b2524c] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Busqueda
                     de libro</label>
             </div>
-            <div class="w-[80%]">
+            <div class="flex space-x-5 w-3/4">
+                
+                <div class="flex flex-col  mt-5">
+                        <label class="font-semibold" for="Filtro">Tipo de ordenación</label>
+                    <select class=" border-2 focus:outline-none  border-[#b2524c] bg-[#ecf0f1] rounded-md p-2" name="orden" id="orden" ng-model="order">
+                        
+                        <option value="titulo" selected>Titulo</option>
+                        <option value="autor">Autor</option>
+                        <option value="paginas">Nº Paginas</option>
+                    </select>
+                    
+                    
+                </div>
+            </div>
+            <div class="w-[80%] mt-5">
                 <h1 class="font-bold text-3xl">Libros disponibles</h1>
-                <ul class="appearance-none">
-                    <li ng-repeat="libro in libros | filter:nombre | orderBy:'titulo'"
-                        class="bg-[#b2524c] p-2 mt-2 font-semibold text-xl rounded-md hover:bg-[#c68f86] transition-colors">
+                <ul class="appearance-none max-h-64 overflow-auto  scroll-smooth snap-x scrollbar px-1">
+                    <a ng-repeat="libro in libros | filter:{titulo:nombre} | orderBy:order"
+                     class="w-full snap-start" href="#/libro/{{libro.id}}">
+                    <li class="bg-[#b2524c] p-2 mt-2 font-semibold text-xl rounded-md hover:bg-[#c68f86] transition-colors">
                     {{libro.titulo}}
-                    </li>
+                    </li></a>
                 </ul>
             </div>
+            <a href="#">
+                <button class="bg-[#b2524c] hover:bg-[#c68f86] transition-colors p-10 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+                </button>
+            </a>
         </aside>
-        <main class="bg-[#b2524c] flex justify-center items-center">
-            <div
-                class="w-[80%] h-[80%] bg-[#d4dbdb] rounded-lg shadow-lg shadow-black grid grid-cols-[2fr_4fr] gap-4 p-2 ps-10">
-                <div class="flex items-center">
-                    <img class="rounded-md" src="{{libros[2].img}}" alt="">
-                </div>
-                <div class="m-10 flex flex-col justify-center space-y-8">
-                    <h1 class="text-4xl font-bold">{{libros[2].titulo}}</h1>
-                    <h5 class="text-2xl font-semibold ">{{libros[2].autor}}</h5>
-                    <p class="text-lg">{{libros[2].descripcion}}</p>
-                </div>
+        <main class="bg-[#b2524c] flex justify-center items-center overflow-hidden ">
+            <div class="w-[80%] h-[80%] bg-[#d4dbdb] rounded-lg shadow-lg shadow-black overflow-auto scrollbar slidein" ng-view>
+            
             </div>
         </main>
     </div>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.3/angular-route.js"></script>
+<script src="booksController.js"></script>
 <script src="main.js"></script>
 
 </html>

@@ -3,24 +3,90 @@
         "id": "1",
         "titulo": "El Juego de Ender",
         "autor": "Orson Scott Card",
+        "paginas": 376,
         "editorial": "Ediciones B / Zeta",
         "descripcion": "La Tierra está amenazada por una especie extraterrestre de insectos que pretende destruir la humanidad. Para vencerlos se precisa la intervención de un genio militar, por lo cual se permite el nacimiento de Ender, tercer hijo de una pareja en un mundo que limita a dos el número de descendientes. Ender se entrenará en una estación espacial, superará a sus rivales y se convertirá en la persona capaz de dirigir las flotas terrestres contra los insectos de otros mundos.",
-        "img": "../assets/el-juego-de-ender.webp"
+        "img": "/assets/el-juego-de-ender.webp"
     },
     {
         "id": "2",
         "titulo": "Juego de tronos",
         "autor": "George R. R. Martin",
+        "paginas": 832,
         "editorial": "Gigamesh",
         "descripcion": "Tras el largo verano, el invierno se acerca a los Siete Reinos. Lord Eddard Stark, señor de Invernalia, deja sus dominios para unirse a la corte de su amigo el rey Robert Baratheon, llamado el Usurpador, hombre díscolo y otrora guerrero audaz cuyas mayores aficiones son comer, beber y engendrar bastardos. Eddard Stark ocupará el cargo de Mano del Rey e intentará desentrañar una maraña de intrigas que pondrá en peligro su vida y la de todos los suyos. En un mundo cuyas estaciones pueden durar decenios y en el que retazos de una magia inmemorial y olvidada surgen en los rincones más sombríos y maravillosos, la traición y la lealtad, la compasión y la sed de venganza, el amor y el poder hacen del juego de tronos una poderosa trampa que atrapará en sus fauces a los personajes... y al lector.",
-        "img": "../assets/juego_de_tronos.jpg"
+        "img": "/assets/juego_de_tronos.jpg"
     },
     {
         "id": "3",
         "titulo": "I robot",
         "autor": "Isaac Asimov",
+        "paginas": 328 ,
         "editorial": "Edhasa",
-        "descripcion": "Los robots de Isaac Asimov son máquinas capaces de llevar a cabo muy diversas tareas, y que a menudo se plantean a sí mismos problemas de 'conducta humana'. Pero estas cuestiones se resuelven en Yo, robot en el ámbito de las tres leyes fundamentales de la robótica, concebidas por Asimov, y que no dejan de proponer extraordinarias paradojas que a veces se explican por errores de funcionamiento y otras por la creciente complejidad de los 'programas'. Las paradojas que se plantean en estos relatos futuristas no son sólo ingeniosos ejercicios intelectuales sino sobre todo una indagación sobre la situación del hombre actual en relación con los avances tecnológicos y con la experiencia del tiempo."
-        ,"img": "../assets/yorobot.jpg"
+        "descripcion": "Los robots de Isaac Asimov son máquinas capaces de llevar a cabo muy diversas tareas, y que a menudo se plantean a sí mismos problemas de 'conducta humana'. Pero estas cuestiones se resuelven en Yo, robot en el ámbito de las tres leyes fundamentales de la robótica, concebidas por Asimov, y que no dejan de proponer extraordinarias paradojas que a veces se explican por errores de funcionamiento y otras por la creciente complejidad de los 'programas'. Las paradojas que se plantean en estos relatos futuristas no son sólo ingeniosos ejercicios intelectuales sino sobre todo una indagación sobre la situación del hombre actual en relación con los avances tecnológicos y con la experiencia del tiempo.",
+        "img": "/assets/yorobot.jpg"
+    },
+    {
+        "id": "4",
+        "titulo": "ESDLA La comunidad del anillo",
+        "autor": "J.R.R TOLKIEN",
+        "paginas": 576 ,
+        "editorial": "MINOTAURO",
+        "descripcion": "Este libro es como un relámpago en un cielo claro. Decir que la novela heroica, espléndida, elocuente y desinhibida, ha retornado de pronto en una época de un antirromanticismo casi patológico, sería inadecuado. Para quienes vivimos en esa extraña época, el retorno ?y el alivio que nos trae? es sin duda lo más importante. Pero para la historia misma de la novela ?una historia que se remonta a la Odisea y a antes de la Odisea? no es un retorno, sino un paso adelante o una revolución: la conquista de un territorio nuevo",
+        "img": "/assets/laComunidadDelAnillo.webp"
+    },
+    {
+        "id": "5",
+        "titulo": "ESDLA Las dos torres",
+        "autor": "J.R.R TOLKIEN",
+        "paginas": 352 ,
+        "editorial": "MINOTAURO",
+        "descripcion": "Ningún escritor del género ha aprovechado tanto como Tolkien las propiedades características de la Misión, el viaje heróico, el Objeto Numinoso, satisfaciendo nuestro sentido de la realidad histórica y social? Tolkien ha triunfado donde fracasó Milton",
+        "img": "/assets/lasDosTorres.webp"
+    },
+    {
+        "id": "6",
+        "titulo": "ESDLA El retorno del rey",
+        "autor": "J.R.R TOLKIEN",
+        "paginas": 608 ,
+        "editorial": "MINOTAURO",
+        "descripcion": "Tercera entrega de la saga épica más famosa del mundo. Mi declaración no es imparcial. Soy el clásico adicto a El Señor de los Anillos. Desde los doce años lo leo cada año. Lo tengo en mi mesita de noche, y cuando no lo leo, huelo sus páginas, las humedezco con mis lágrimas, me froto mis carnes tolendas con los lomos de sus tres volúmenes.",
+        "img": "/assets/retornoDelRey.webp"
+    },
+    {
+        "id": "7",
+        "titulo": "La rueda del tiempo. El ojo del Mundo",
+        "autor": "Robert Jordan",
+        "paginas": 832 ,
+        "editorial": "MINOTAURO",
+        "descripcion": "Por su calidad literaria, su ambicioso planteamiento y su monumental historia, La Rueda del Tiempo es la saga de fantasía más importante de los últimos años. El lector que inicie el camino junto a Rand, Mat y Perrin no podrá abandonar el viaje hasta su incierto y sorprendente final.",
+        "img": "/assets/rueda1.webp"
+    },
+    {
+        "id": "8",
+        "titulo": "La rueda del tiempo. La gran cacería",
+        "autor": "Robert Jordan",
+        "paginas": 720 ,
+        "editorial": "MINOTAURO",
+        "descripcion": "Rand ha sobrevivido a su primer enfrentamiento con los perversos seguidores del Oscuro, pero ni sus amigos ni él están a salvo, ya que el Señor del mal ha liberado a los Renegados, mientras los héroes de todas las eras se levantan de la tumba cuando el Cuerno de Valere los saca de su sueño. Al verse obligado a enfrentarse a las fuerzas de la oscuridad, Rand decide escapar de su destino. Pero la profecía tiene que cumplirse.",
+        "img": "/assets/rueda2.webp"
+    },
+    {
+        "id": "9",
+        "titulo": "La historia interminable",
+        "autor": "Michael Ende",
+        "paginas": 496 ,
+        "editorial": "ALFAGUARA",
+        "descripcion": "La Emperatriz Infantil está mortalmente enferma y su reino, Fantasia, corre un grave peligro. La salvación depende de Atreyu, un valiente guerrero de la tribu de los pieles verdes, y Bastian, un niño tímido que lee con pasión un libro mágico.",
+        "img": "/assets/historia.jpg"  
+    },
+    {
+        "id": "10",
+        "titulo": "Percy Jackson, El ladrón del rayo",
+        "autor": "Rick Riordan",
+        "paginas": 288 ,
+        "editorial": "Salamandra Infantil",
+        "descripcion": "Acompaña a Percy a través de esta apasionante serie de aventuras sobre un mundo secreto, el mundo que los antiguos dioses griegos han recreado a nuestro alrededor en pleno siglo XXI.",
+        "img": "/assets/pj_ladron.jpg"  
     }
 ]
